@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+} */
+
+
+.pop-up {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.video-bt {
+    color: #fff;
+    text-align: center !important;
+    font-weight: 700 !important;
+    width: 100px !important;
+    height: 50px !important;
+    background-color: rgba(255, 255, 255, 0.19);
+    border: none;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 20%;
+}
+
+.modal {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.modal-content {
+    background-color: transparent;
+    padding: 16px 24px;
+    width: 600px;
+}
+
+.modal-content span {
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 0.190);
+    text-align: center;
+    line-height: 24px;
+    font-size: 35px;
+    position: absolute;
+    left: 70%;
+    bottom: 76%;
+    color: #fff;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+

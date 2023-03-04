@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assistir.css">
+        <link rel="stylesheet" href="principal.css">
+        <link rel="stylesheet" href="./pop-up.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=www.netflix.com/br/" type="image/x-icon">
+        <title>Assistir</title>
+    </head>
+<body>
+    <header >
+        <a href="./principal.html" ><img src="./images/Netflix_Logo_PMS.png" alt="" id="logo"></a>
+        <a href="#" target="_blank">
+            <h5 id="navegar">Navegar</h5>
+        </a>
+        <a href="#" target="_blank">
+            <span id="lupa" class="material-symbols-outlined">
+                search
+            </span>
+        </a>
+        <a href="#" target="_blank">
+            <span id="sino" class="material-symbols-outlined">
+                notifications
+            </span>
+        </a>
+        <a href="./index.html">
+            <span id="exit" class="material-symbols-outlined">
+                logout
+            </span>
+        </a>
+        <a href="#" target="_blank">
+            <div id="icon">
+            </div>
+        </a>
+    </header>
+    <button class="video-bt" onclick="showModal()">Video</button>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span onclick="hideModal()">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yJNdCnX3PEY?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            var element = document.getElementById("modal");
+            element.classList.add("show-modal");
+        }
+
+        function hideModal() {
+            var element = document.getElementById("modal");
+            element.classList.remove("show-modal");
+        }
+
+        function pausarPlay() {
+            var element = document.getElementById("alow");
+            element = allow.action.remove("alow");
+        }
+    </script>
+</body>
+</html>
