@@ -5,13 +5,14 @@
 }
 
 body {
+    width: 100%;
     background-color: rgb(17, 17, 17);
 }
 
 h1 {
     text-align: center;
     position: relative;
-    top: 127px;
+    top: 100px;
     color: #fff;
 }
 

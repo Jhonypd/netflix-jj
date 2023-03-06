@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 700px) and (max-width: 950px) {
-    
+
     h1 {
         top: 150px;
     }
+
     div#jenifer {
         background-position: center center;
         background-size: contain;
@@ -24,47 +25,100 @@
     }
 }
 
-/* @media screen and (min-width: 950px) {
-    
-    h1 {
-        text-align: center;
-        position: relative;
-        top: 150px;
-        color: white;
+@media screen and (min-width: 400px) and (max-width: 698px) {
+    div#imagem {
+        background-size: 435px 400px;
+        width: 100%;
+        height: 235px;
     }
-    div#jenifer {
-        background-image: url(imagens/amor.jpeg);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 8px;
-        background-color: white;
-        width: 90px;
-        height: 100px;
+
+    @keyframes mymove 100% {
+        background-size: 690px 270px;
     }
-    p {
-        color: rgb(105, 105, 105);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 300%);
+
+    div#play {
+        top: 35%;
+        left: 10%;
+        font-size: 1.3em;
     }
-    div#perfis {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 350%);
-        padding: 5px;
-        border: 1px solid rgb(105, 105, 105);
-        background-color: black;
-        color: rgb(105, 105, 105);
-        height: 20px;
-        width: 150px;
-        text-align: center;
-        margin: 5px;
+
+    #sino {
+        left: 60%;
     }
-} */
+
+    #lupa {
+        left: 68%;
+    }
+
+    #exit {
+        left: 76%;
+    }
+
+    div#icon {
+        left: 85%;
+        width: 45px;
+        height: 45px;
+    }
+
+    p#titulo {
+        color: #222224 font-size: 1.9em;
+        top: 15%;
+        left: 55%;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 698px) {
+    div#imagem {
+        background-size: 435px 400px;
+        width: 100%;
+        height: 235px;
+    }
+    @keyframes mymove 100% {
+        background-size: 690px 270px;
+    }
+
+    div#play {
+        top: 35%;
+        left: 10%;
+        font-size: 1.3em;
+    }
+
+    #sino {
+        left: 60%;
+    }
+
+    #lupa {
+        left: 68%;
+    }
+
+    #exit {
+        left: 76%;
+    }
+
+    div#icon {
+        left: 85%;
+        width: 45px;
+        height: 45px;
+    }
+
+    p#titulo {
+        color: #222224 font-size: 1.9em;
+        top: 15%;
+        left: 55%;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
